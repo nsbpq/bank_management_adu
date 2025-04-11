@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Account Details</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 400px; padding: 20px; border: 1px solid black; }
+        h2 { color: #333; }
+        p { font-size: 18px; }
+        a { display: inline-block; margin-top: 20px; text-decoration: none; background: #007bff; color: white; padding: 10px 15px; border-radius: 5px; }
+        a:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Account Details</h2>
+    <p><strong>ID:</strong> <span th:text="${account.id}"></span></p>
+    <p><strong>Type:</strong> <span th:text="${account.type}"></span></p>
+    <p><strong>Balance:</strong> <span th:text="${account.balance}"></span></p>
+
+    <a href="/accounts">Back to Account List</a>
+</div>
+
+</body>
+</html>
